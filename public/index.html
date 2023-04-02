@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="./main.css">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="title">
+        <h3>Simulador de Chat</h3>
+    </div>
+    <div class="decription">
+        <p>Genére varias pestañas en su navegador con la misma url para mejorar la experiencia y rellene el primer campo en cada pestaña. 
+            Luego podrá notar que al escribir en el campo mensaje, los demas usuarios pueden ver que está escribiendo algo. Y por ultimo, envie un mensaje generando una conversacion habitual con los demas usuarios.</p>
+    </div>
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="actions"></div>
+        </div>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="text" id="message" placeholder="mensaje"><br><br>  
+        
+        <button id="send">Enviar</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+
+    <footer class="footer">Powered by: <strong>rodjess</strong></footer>
+</body>
+</html>
